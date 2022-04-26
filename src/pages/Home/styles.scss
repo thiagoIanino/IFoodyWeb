@@ -1,0 +1,86 @@
+.HomeContainer {
+    width: 1300px;
+    height: 90vh;
+    padding-top: 15px;
+
+    background-color: white;
+    margin: 0 auto;
+
+    h2 {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 900;
+        margin-left: 15px;
+        font-size: 1.2rem;
+        &.Famosos {
+            margin-top: 70px;
+        }
+    }
+}
+a{
+    color: black;
+
+}
+
+.HomeCategorias {
+    display: flex;
+    justify-content: space-around;
+    img {
+        width: 110px;
+    }
+    p {
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+    }
+}
+
+.HomeDestaques {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-around;
+    img {
+        width: 400px;
+        border-radius: 7px;
+    }
+}
+
+.HomeFamomos {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+
+    .RestauranteMini {
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+
+        .RestauranteMiniLeftSide{
+            display: flex;
+        }
+     
+        .RestauranteMiniDesc {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            h4,p{
+                font-family: 'Open Sans', sans-serif;
+            }
+        }
+        .ClassificacaoRestaurante {
+            color: #e7a74e;
+            font-family: "Open Sans", sans-serif;
+            display: flex;
+            align-items: flex-start;
+            svg {
+                width: 13px;
+            }
+        }
+        img {
+            width: 100px;
+            border-radius: 50%;
+            margin-right: 25px;
+        }
+    }
+}

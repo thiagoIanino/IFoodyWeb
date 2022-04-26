@@ -1,0 +1,29 @@
+
+.LoginFormContainer{
+    margin: 250px auto ;
+    background: white;
+    height: 400px;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgb(184, 184, 184);
+
+
+    .LoginFormContent{
+        h3{
+            color: rgb(59, 59, 59);
+            font-size: 1.4rem;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        Button{
+            background: rgb(236, 35, 51);
+        }
+
+        margin:40px;
+        padding: 20px 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

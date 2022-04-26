@@ -1,0 +1,243 @@
+.Box {
+    max-height: 100vh;
+    height: 100%;
+}
+#displayNone {
+    display: none;
+
+}
+#nenhumPedidoPorAqui{
+    width: 100%;
+    margin: 200px auto;
+    font-family: "Open Sans", sans-serif;
+}
+#HrPedido{
+    border: rgb(185, 0, 0) solid 1px;
+    margin-top: 20px;
+}
+.Pointanimation {
+    animation: bounce 0.5s infinite alternate forwards;
+    -webkit-animation: bounce 0.5s infinite alternate;
+    margin-left: 5px;
+    &:nth-child(2){
+        animation-delay: 0.3s;
+    }
+    &:nth-child(3){
+        animation-delay: 1.8s;
+    }
+}
+.BlockPedidosAtivos{
+    width: 400px;
+    margin: 40px auto;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.384);
+    border-radius: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+
+    #progressBarPedido{
+        margin-bottom: 10px;
+    }
+    span{
+        &#TempoEntrega{
+        font-weight: 800;
+        font-size: 20px;
+        }
+        &#StatusPedido{
+            font-weight: 800;
+            font-size: 16px;
+            }
+    }
+    .BottomSituacaoPedido{
+        display: flex;
+        align-items: center;
+
+        img#miniLogo{
+            width: 60px;
+            border-radius: 50%; 
+            margin-right: 15px;
+        }
+    }
+}
+.TopPanel {
+    height: 10%;
+    padding-top: 25px;
+
+    .BarraDeProgresso {
+        margin-top: 20px;
+    }
+}
+.PagamentoSendoProcessado {
+    animation: bounce 1s infinite alternate forwards;
+    -webkit-animation: bounce 1s infinite alternate;
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.EnderecoNaoCadastrado {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    font-family: "Open Sans", sans-serif;
+    span {
+        margin-top: 10px;
+        font-size: 18px;
+        color: red;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+.TituloPassoPedido {
+    margin-top: 0;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+.DrawerContainerPass1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    hr {
+        margin: 20px 0;
+        border-color: rgba(207, 207, 207, 0.342);
+    }
+
+    .PedidoContainer {
+        margin-top: 40px;
+
+        .DescricaoPrecoPedido {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 20px;
+            margin-bottom: 20px;
+        }
+        .DivisorItensPedido {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+        span {
+            font-family: "Open Sans", sans-serif;
+            font-weight: bold;
+        }
+        h4 {
+            display: inline;
+            margin-left: 20px;
+            font-family: "Open Sans", sans-serif;
+            cursor: pointer;
+
+            &#Editar {
+                color: red;
+            }
+        }
+    }
+    .DrawerTopPass1 {
+        max-height: 80%;
+        overflow-y: auto;
+    }
+    .ConfirmacaoPedido {
+        font-family: "Open Sans", sans-serif;
+        padding: 0 30px;
+        width: 100%;
+        .ValorTotalPedidoConfirmacao {
+            text-align: center;
+            margin-bottom: 40px;
+            margin-top: 50px;
+        }
+        h3 {
+            margin-top: 20px;
+        }
+        #TituloEnderecoConfirmacao {
+            margin-bottom: 15px;
+        }
+
+        .cartaoBlockConfirmarPedido {
+            margin: 30px auto;
+            max-width: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            img {
+                height: 40px;
+            }
+        }
+    }
+
+    .DrawerBottomPass1 {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        .DrawerBottomTotal {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .DrawerButtonPass1 {
+            margin-top: 15px;
+        }
+    }
+}
+.cartaoBlock {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 50px;
+    padding: 25px;
+    border-radius: 7px;
+    border: 1px rgba(128, 128, 128, 0.466) solid;
+    img {
+        width: 50px;
+        height: 50px;
+    }
+    span {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+
+.enderecoBlockContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px rgba(128, 128, 128, 0.466) solid;
+
+    .enderecoInformation {
+        display: flex;
+        flex-direction: column;
+        span {
+            font-family: "Open Sans", sans-serif;
+        }
+
+        #LinhaPrincipalEndereco {
+            font-weight: 600;
+        }
+    }
+}
+
+@keyframes bounce {
+    from {
+      opacity: 0.7;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+//   @-webkit-keyframes bounce {
+//     from {
+//       transform: translateY(0px);
+//     }
+//     to {
+//       transform: translateY(-4px);
+//     }
+//  }

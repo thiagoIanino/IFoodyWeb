@@ -1,0 +1,128 @@
+.RestauranteContainer {
+    width: 1300px;
+    margin: 0 auto;
+    background-color: white;
+
+    #BtnAdicionarPrato{
+        height: 40px;
+    }
+}
+#displayNone{
+    display: none;
+}
+#circularProgress{
+    margin-left: 49%;
+}
+
+.RestauranteTopContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        border-radius: 50%;
+        width: 100px;
+        border: 1px rgba(141, 136, 136, 0.24) solid;
+    }
+
+    .LeftSideRestauranteContainer {
+        display: flex;
+        align-items: center;
+
+        svg {
+            font-size: 30px;
+            color: rgb(204, 0, 0);
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        h2 {
+            font-family: "Open Sans", sans-serif;
+            font-size: 2.4rem;
+            margin-left: 18px;
+        }
+    }
+    .ClassificacaoRestaurante {
+        color: #e7a74e;
+        display: flex;
+        align-items: center;
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.CategoriaContainer {
+    .CategoriaContent {
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 'Roboto', sans-serif;
+
+        #TituloTipoPrato{
+            margin-left: 20px;
+            width: 100%;
+        }
+
+        .PratoRestauranteContainer {
+            width: 50%;
+            height: 220px;
+            margin: 20px 0;
+            &:hover{
+                cursor: pointer;
+            }
+
+            &#blockPedidoGerencia{
+                cursor: auto;  
+            }
+
+            .PratoRestauranteContent {
+                width: 95%;
+                margin: 0 auto;
+                border: 1px solid rgba(0, 0, 0, 0.13);
+                box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.13);
+                border-radius: 5px;
+                height: 220px;
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+
+                .LeftPratoRestaurante{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding-right: 15px;
+                    h3{
+                        font-weight: 500;
+                    }
+
+                    #DescricaoPratoRestaurante{
+                        margin-top: 20px;
+                    }
+                    span{
+                        color: rgb(0, 179, 0);
+                    }
+                }
+
+                img{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+#RightSideImgPedido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    #TrachIcon{
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}

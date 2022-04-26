@@ -1,0 +1,19 @@
+.QuantidadeViwer {
+    height: 50px;
+    width: 140px;
+    border: 1px solid rgba(179, 179, 179, 0.698);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    svg {
+        cursor: pointer;
+        color: red;
+    }
+    .opaco {
+        svg {
+            color: rgba(255, 0, 0, 0.329);
+            cursor: auto;
+        }
+    }
+}

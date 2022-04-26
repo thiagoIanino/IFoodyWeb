@@ -1,25 +1,30 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import logo from './logo.svg';
-import './App.css';
+import './styles/global.scss';
+import Routes from './routes';
+import {DrawerContextProvider}  from './providers/DrawerProvider'
+import DrawerComponent from './components/Drawer'
+import { ToastContainer } from 'react-toastify';
+import DrawerPedido from './components/DrawerPedido';
+import ModalAvaliacao from './components/ModalAvaliacao';
+import PratoModal from './components/PratoModal';
 
-function App() {
+const App = () =>{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+  <ToastContainer className='toastifyClass' position='top-left'/>
+   <DrawerContextProvider>
+   <Router>
+    <Routes/>
+    <DrawerComponent/>
+    <ModalAvaliacao/>
+    <PratoModal/>
+    <DrawerPedido/>
+   </Router>
+   </DrawerContextProvider>
+   </>
+    
   );
 }
 
